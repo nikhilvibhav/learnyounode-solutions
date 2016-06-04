@@ -1,3 +1,3 @@
 #learnyounode solutions
 
-Solutions for learnyounode tutorials
+Solutions for Node.js learnyounode tutorials
