@@ -1,13 +1,13 @@
-var net = require('net')
-var strftime = require('strftime')
+var net = require('net');
+var strftime = require('strftime');
 
 function now () {
-	return strftime('%F %R', new Date())
+	return strftime('%F %R', new Date());
 }
 
 var server = net.createServer(function (socket) {
-	socket.write(now() + '\n')
-	socket.end()
-})
+	socket.write(now() + '\n');
+	socket.end();
+});
 
-server.listen(Number(process.argv[2]))
+server.listen(Number(process.argv[2]));
